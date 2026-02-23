@@ -11,12 +11,14 @@
 3. Create environment configuration: `cp .env.example .env`
 4. **Database Preparation:** - Create a new empty database in MySQL named `resmap_db`
 5. Update your `.env` file with your local database credentials:
+<pre>
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=resmap_db
 DB_USERNAME=root
 DB_PASSWORD=
+</pre>
 6. Generate application key: `php artisan key:generate`
 7. Run database migrations: `php artisan migrate`
 8. Start the backend server: php artisan serve (Runs on port 8000)
